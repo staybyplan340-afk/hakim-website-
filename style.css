@@ -2594,3 +2594,43 @@ html {
     }
 
 }
+/* =========================
+   HAH BRAND LOGO
+   ========================= */
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.brand-logo img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.brand-logo span {
+    font-size: 16px;
+}
+
+.light-mode .brand-logo {
+    color: black;
+}
+
+@media (max-width: 600px) {
+
+    .brand-logo span {
+        font-size: 13px;
+    }
+
+    .brand-logo img {
+        width: 36px;
+        height: 36px;
+    }
+}
