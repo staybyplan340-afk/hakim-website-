@@ -1,0 +1,2596 @@
+/* ================================
+   BASIC PAGE SETTINGS
+================================ */
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ================================
+   GENERAL TEXT
+================================ */
+
+h1,
+h2,
+h3,
+p {
+    color: white;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+/* ================================
+   NAVIGATION
+================================ */
+
+nav {
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================
+   HERO / HOME PAGE
+================================ */
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.welcome {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 15px 0;
+    color: white;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.7;
+    color: white;
+}
+
+
+/* ================================
+   HOME PAGE BUTTONS
+================================ */
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.primary {
+    background-color: white;
+    color: black;
+}
+
+.secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+
+/* ================================
+   GREETING
+================================ */
+
+#greeting {
+    color: white !important;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.light-mode #greeting {
+    color: black !important;
+}
+
+
+/* ================================
+   THEME BUTTON
+================================ */
+
+.theme-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+
+    padding: 10px 16px;
+
+    border: none;
+    border-radius: 25px;
+
+    cursor: pointer;
+    font-size: 14px;
+
+    background-color: white;
+    color: black;
+}
+
+body:not(.light-mode) .theme-button {
+    background-color: #222;
+    color: white;
+}
+
+.light-mode .theme-button {
+    background-color: black;
+    color: white;
+}
+
+
+/* ================================
+   MOBILE MENU BUTTON
+================================ */
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* ================================
+   NAVIGATION LINKS CONTAINER
+================================ */
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+/* ================================
+   CONTACT PAGE
+================================ */
+
+.contact-section {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.contact-section > p {
+    color: white;
+    line-height: 1.6;
+}
+
+.contact-section form {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.contact-section label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+
+    background-color: black;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+.contact-section textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-section button {
+    margin-top: 25px;
+    padding: 12px 25px;
+
+    background-color: white;
+    color: black;
+
+    border: none;
+    border-radius: 5px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#formMessage {
+    color: white !important;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* ================================
+   SERVICES PAGE
+================================ */
+
+.services-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.services-section h1 {
+    font-size: 45px;
+    margin: 10px 0;
+    color: white;
+}
+
+.services-intro {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 280px;
+    padding: 30px 20px;
+
+    border: 1px solid white;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+}
+
+.service-card h2 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.service-card p {
+    line-height: 1.6;
+    color: white;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    margin-top: 80px;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid white;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+footer p {
+    color: white;
+}
+
+.footer-links {
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+
+/* ================================
+   LIGHT MODE
+================================ */
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.light-mode h1,
+.light-mode h2,
+.light-mode h3,
+.light-mode p,
+.light-mode .welcome,
+.light-mode .description {
+    color: black !important;
+}
+
+.light-mode nav {
+    background-color: white;
+}
+
+.light-mode nav a {
+    color: black;
+}
+
+.light-mode .secondary {
+    color: black;
+    border-color: black;
+}
+
+.light-mode .primary {
+    background-color: black;
+    color: white;
+}
+
+.light-mode footer {
+    border-top-color: black;
+}
+
+.light-mode footer h2,
+.light-mode footer p {
+    color: black !important;
+}
+
+.light-mode .footer-links a {
+    color: black;
+}
+
+.light-mode .contact-section h1,
+.light-mode .contact-section > p,
+.light-mode .contact-section label {
+    color: black !important;
+}
+
+.light-mode .contact-section input,
+.light-mode .contact-section textarea {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.light-mode .contact-section button {
+    background-color: black;
+    color: white;
+}
+
+.light-mode #formMessage {
+    color: black !important;
+}
+
+.light-mode .service-card {
+    border-color: black;
+}
+
+.light-mode .service-card h2,
+.light-mode .service-card p,
+.light-mode .services-section h1,
+.light-mode .services-intro {
+    color: black !important;
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 600px) {
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .btn {
+        display: block;
+        margin: 10px auto;
+        max-width: 200px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .contact-section {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+
+    .contact-section h1 {
+        font-size: 32px;
+    }
+
+    .theme-button {
+        top: 15px;
+        right: 15px;
+    }
+
+}/* ================================
+   BASIC PAGE SETTINGS
+================================ */
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ================================
+   GENERAL TEXT
+================================ */
+
+h1,
+h2,
+h3,
+p {
+    color: white;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+/* ================================
+   NAVIGATION
+================================ */
+
+nav {
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================
+   HERO / HOME PAGE
+================================ */
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.welcome {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 15px 0;
+    color: white;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.7;
+    color: white;
+}
+
+
+/* ================================
+   HOME PAGE BUTTONS
+================================ */
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.primary {
+    background-color: white;
+    color: black;
+}
+
+.secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+
+/* ================================
+   GREETING
+================================ */
+
+#greeting {
+    color: white !important;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.light-mode #greeting {
+    color: black !important;
+}
+
+
+/* ================================
+   THEME BUTTON
+================================ */
+
+.theme-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+
+    padding: 10px 16px;
+
+    border: none;
+    border-radius: 25px;
+
+    cursor: pointer;
+    font-size: 14px;
+
+    background-color: white;
+    color: black;
+}
+
+body:not(.light-mode) .theme-button {
+    background-color: #222;
+    color: white;
+}
+
+.light-mode .theme-button {
+    background-color: black;
+    color: white;
+}
+
+
+/* ================================
+   MOBILE MENU BUTTON
+================================ */
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* ================================
+   NAVIGATION LINKS CONTAINER
+================================ */
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+/* ================================
+   CONTACT PAGE
+================================ */
+
+.contact-section {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.contact-section > p {
+    color: white;
+    line-height: 1.6;
+}
+
+.contact-section form {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.contact-section label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+
+    background-color: black;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+.contact-section textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-section button {
+    margin-top: 25px;
+    padding: 12px 25px;
+
+    background-color: white;
+    color: black;
+
+    border: none;
+    border-radius: 5px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#formMessage {
+    color: white !important;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* ================================
+   SERVICES PAGE
+================================ */
+
+.services-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.services-section h1 {
+    font-size: 45px;
+    margin: 10px 0;
+    color: white;
+}
+
+.services-intro {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 280px;
+    padding: 30px 20px;
+
+    border: 1px solid white;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+}
+
+.service-card h2 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.service-card p {
+    line-height: 1.6;
+    color: white;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    margin-top: 80px;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid white;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+footer p {
+    color: white;
+}
+
+.footer-links {
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+
+/* ================================
+   LIGHT MODE
+================================ */
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.light-mode h1,
+.light-mode h2,
+.light-mode h3,
+.light-mode p,
+.light-mode .welcome,
+.light-mode .description {
+    color: black !important;
+}
+
+.light-mode nav {
+    background-color: white;
+}
+
+.light-mode nav a {
+    color: black;
+}
+
+.light-mode .secondary {
+    color: black;
+    border-color: black;
+}
+
+.light-mode .primary {
+    background-color: black;
+    color: white;
+}
+
+.light-mode footer {
+    border-top-color: black;
+}
+
+.light-mode footer h2,
+.light-mode footer p {
+    color: black !important;
+}
+
+.light-mode .footer-links a {
+    color: black;
+}
+
+.light-mode .contact-section h1,
+.light-mode .contact-section > p,
+.light-mode .contact-section label {
+    color: black !important;
+}
+
+.light-mode .contact-section input,
+.light-mode .contact-section textarea {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.light-mode .contact-section button {
+    background-color: black;
+    color: white;
+}
+
+.light-mode #formMessage {
+    color: black !important;
+}
+
+.light-mode .service-card {
+    border-color: black;
+}
+
+.light-mode .service-card h2,
+.light-mode .service-card p,
+.light-mode .services-section h1,
+.light-mode .services-intro {
+    color: black !important;
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 600px) {
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .btn {
+        display: block;
+        margin: 10px auto;
+        max-width: 200px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .contact-section {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+
+    .contact-section h1 {
+        font-size: 32px;
+    }
+
+    .theme-button {
+        top: 15px;
+        right: 15px;
+    }
+
+}
+/* ===== MOBILE NAVIGATION ===== */
+
+.main-nav {
+    position: relative;
+    padding: 15px 20px;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Light mode */
+.light-mode .menu-button {
+    color: black;
+}
+
+.light-mode .nav-links a {
+    color: black;
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+}
+/* =================================
+   ABOUT PAGE
+================================= */
+
+.about-section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.about-tag {
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.about-section h1 {
+    font-size: 48px;
+    margin: 10px 0 25px;
+}
+
+.about-intro {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+
+/* About cards */
+
+.about-card {
+    max-width: 750px;
+    margin: 25px auto;
+    padding: 30px;
+
+    border: 1px solid white;
+    border-radius: 12px;
+
+    text-align: left;
+}
+
+.about-card h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.about-card p {
+    line-height: 1.8;
+}
+
+
+/* Vision card */
+
+.vision-card {
+    margin-top: 40px;
+}
+
+.vision-quote {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+
+/* Light mode */
+
+.light-mode .about-card {
+    border-color: black;
+}
+
+.light-mode .about-tag,
+.light-mode .about-section h1,
+.light-mode .about-intro,
+.light-mode .about-card h2,
+.light-mode .about-card p,
+.light-mode .vision-quote {
+    color: black !important;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .about-section {
+        margin: 35px auto;
+        padding: 20px 15px;
+    }
+
+    .about-section h1 {
+        font-size: 34px;
+    }
+
+    .about-intro {
+        font-size: 17px;
+    }
+
+    .about-card {
+        padding: 22px;
+    }
+
+    .about-card h2 {
+        font-size: 22px;
+    }
+
+}
+/* =================================
+   SERVICES PAGE UPGRADE
+================================= */
+
+.services-tag {
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.services-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.services-intro {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+}
+
+
+/* Service cards */
+
+.service-card {
+    position: relative;
+    width: 280px;
+    min-height: 260px;
+
+    padding: 35px 25px;
+
+    border: 1px solid white;
+    border-radius: 15px;
+
+    box-sizing: border-box;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+/* Service icons */
+
+.service-icon {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+
+/* Card headings */
+
+.service-card h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+
+/* Card descriptions */
+
+.service-card p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* Hover effect */
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
+}
+
+
+/* Light mode */
+
+.light-mode .services-tag,
+.light-mode .services-section h1,
+.light-mode .services-intro {
+    color: black !important;
+}
+
+.light-mode .service-card {
+    border-color: black;
+}
+
+.light-mode .service-card h2,
+.light-mode .service-card p {
+    color: black !important;
+}
+
+.light-mode .service-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .services-section {
+        margin: 35px auto;
+        padding: 20px 15px;
+    }
+
+    .services-section h1 {
+        font-size: 36px;
+    }
+
+    .services-intro {
+        font-size: 17px;
+        margin-bottom: 35px;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 350px;
+        min-height: auto;
+    }
+
+}
+/* =================================
+   SKILLS SECTION
+================================= */
+
+.skills-section {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.skills-tag {
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.skills-section h2 {
+    font-size: 45px;
+    margin: 10px 0 20px;
+}
+
+.skills-intro {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+}
+
+
+/* Skill cards */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    text-align: left;
+}
+
+.skill-card {
+    padding: 25px;
+
+    border: 1px solid white;
+    border-radius: 12px;
+
+    box-sizing: border-box;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.12);
+}
+
+
+/* Skill name and percentage */
+
+.skill-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 12px;
+
+    font-weight: bold;
+}
+
+
+/* Progress bar background */
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+
+    background-color: #333;
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+/* Progress bar */
+
+.skill-progress {
+    height: 100%;
+    background-color: white;
+
+    border-radius: 20px;
+
+    transform-origin: left;
+    animation: skillAnimation 1.5s ease-out;
+}
+
+
+/* Individual skill levels */
+
+.html-progress {
+    width: 90%;
+}
+
+.css-progress {
+    width: 85%;
+}
+
+.javascript-progress {
+    width: 65%;
+}
+
+.responsive-progress {
+    width: 80%;
+}
+
+
+/* Progress animation */
+
+@keyframes skillAnimation {
+
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+
+}
+
+
+/* Light mode */
+
+.light-mode .skills-tag,
+.light-mode .skills-section h2,
+.light-mode .skills-intro,
+.light-mode .skill-top {
+    color: black !important;
+}
+
+.light-mode .skill-card {
+    border-color: black;
+}
+
+.light-mode .skill-bar {
+    background-color: #ddd;
+}
+
+.light-mode .skill-progress {
+    background-color: black;
+}
+
+.light-mode .skill-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .skills-section {
+        margin: 50px auto;
+        padding: 30px 15px;
+    }
+
+    .skills-section h2 {
+        font-size: 36px;
+    }
+
+    .skills-intro {
+        font-size: 17px;
+        margin-bottom: 35px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .skill-card {
+        padding: 22px;
+    }
+
+}
+/* =================================
+   ADVANCED WEBSITE ANIMATIONS
+================================= */
+
+/* Smooth scrolling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* =================================
+   PAGE ENTRANCE
+================================= */
+
+.hero,
+.skills-section,
+.profile-section,
+.about-section,
+.services-section,
+.contact-section {
+    animation: pageReveal 1s ease-out both;
+}
+
+@keyframes pageReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =================================
+   STAGGERED SKILL CARDS
+================================= */
+
+.skill-card {
+    animation: cardReveal 0.8s ease-out both;
+}
+
+.skill-card:nth-child(1) {
+    animation-delay: 0.15s;
+}
+
+.skill-card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.skill-card:nth-child(3) {
+    animation-delay: 0.45s;
+}
+
+.skill-card:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+@keyframes cardReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =================================
+   SERVICE CARD ANIMATION
+================================= */
+
+.service-card {
+    animation: serviceReveal 0.8s ease-out both;
+}
+
+.service-card:nth-child(1) {
+    animation-delay: 0.15s;
+}
+
+.service-card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.service-card:nth-child(3) {
+    animation-delay: 0.45s;
+}
+
+.service-card:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+@keyframes serviceReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+/* =================================
+   PROFILE ANIMATION
+================================= */
+
+.profile-placeholder {
+    animation:
+        profileFloat 4s ease-in-out infinite,
+        profileGlow 3s ease-in-out infinite;
+}
+
+@keyframes profileGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+
+    50% {
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.18);
+    }
+
+}
+
+
+/* =================================
+   BUTTON ANIMATION
+================================= */
+
+.btn,
+.profile-button,
+.contact-section button {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.btn:hover,
+.profile-button:hover,
+.contact-section button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =================================
+   NAVIGATION ANIMATION
+================================= */
+
+.nav-links a {
+    position: relative;
+    transition: opacity 0.25s ease;
+}
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -5px;
+
+    width: 0;
+    height: 2px;
+
+    background-color: currentColor;
+
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+/* =================================
+   FOOTER LINK ANIMATION
+================================= */
+
+.footer-links a {
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.footer-links a:hover {
+    transform: translateY(-2px);
+    opacity: 0.7;
+}
+
+
+/* =================================
+   REDUCED MOTION ACCESSIBILITY
+================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+}
+/* =================================
+   PROJECTS SECTION
+================================= */
+
+.projects-section {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.projects-tag {
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.projects-section h2 {
+    font-size: 48px;
+    margin: 10px 0 20px;
+}
+
+.projects-intro {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+}
+
+
+/* Project cards */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    text-align: left;
+}
+
+.project-card {
+    position: relative;
+
+    padding: 30px;
+
+    border: 1px solid white;
+    border-radius: 15px;
+
+    min-height: 280px;
+
+    box-sizing: border-box;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Project number */
+
+.project-number {
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    opacity: 0.6;
+    margin-bottom: 25px;
+}
+
+
+/* Project title */
+
+.project-card h3 {
+    font-size: 23px;
+    margin-bottom: 18px;
+}
+
+
+/* Project description */
+
+.project-card p {
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+
+/* Technologies */
+
+.project-tech {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    opacity: 0.7;
+}
+
+
+/* Hover effect */
+
+.project-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 15px 35px rgba(255, 255, 255, 0.15);
+}
+
+
+/* =================================
+   PROJECT ANIMATION
+================================= */
+
+.project-card {
+    animation: projectReveal 0.8s ease-out both;
+}
+
+.project-card:nth-child(1) {
+    animation-delay: 0.15s;
+}
+
+.project-card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.project-card:nth-child(3) {
+    animation-delay: 0.45s;
+}
+
+@keyframes projectReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =================================
+   LIGHT MODE
+================================= */
+
+.light-mode .projects-tag,
+.light-mode .projects-section h2,
+.light-mode .projects-intro {
+    color: black !important;
+}
+
+.light-mode .project-card {
+    border-color: black;
+}
+
+.light-mode .project-card h3,
+.light-mode .project-card p,
+.light-mode .project-number,
+.light-mode .project-tech {
+    color: black !important;
+}
+
+.light-mode .project-card:hover {
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 800px) {
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .projects-section {
+        margin: 70px auto;
+        padding: 30px 15px;
+    }
+
+    .projects-section h2 {
+        font-size: 36px;
+    }
+
+    .projects-intro {
+        font-size: 17px;
+        margin-bottom: 35px;
+    }
+
+    .project-card {
+        min-height: 260px;
+    }
+
+}
+/* =================================
+   PROJECT IMAGES
+================================= */
+
+.project-image {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 25px;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    background-color: #222;
+}
+
+.project-image-placeholder {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    opacity: 0.6;
+
+    transition:
+        transform 0.4s ease,
+        opacity 0.4s ease;
+}
+
+.project-card:hover .project-image-placeholder {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+
+/* Project content */
+
+.project-content {
+    padding-bottom: 25px;
+}
+
+
+/* Make project cards flexible */
+
+.project-card {
+    overflow: hidden;
+}
+
+
+/* Light mode */
+
+.light-mode .project-image {
+    background-color: #eee;
+}
+
+.light-mode .project-image-placeholder {
+    color: black;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .project-image {
+        height: 170px;
+    }
+
+}
+/* =================================
+   PROJECT BUTTONS
+================================= */
+
+.project-button {
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 10px 18px;
+
+    border: 1px solid white;
+    border-radius: 6px;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease,
+        color 0.25s ease;
+}
+
+.project-button:hover {
+    background-color: white;
+    color: black;
+    transform: translateX(5px);
+}
+
+
+/* Light mode */
+
+.light-mode .project-button {
+    color: black;
+    border-color: black;
+}
+
+.light-mode .project-button:hover {
+    background-color: black;
+    color: white;
+}
+/* =================================
+   PROJECT STATUS
+================================= */
+
+.project-status {
+    display: inline-block;
+
+    margin-bottom: 18px;
+    padding: 5px 10px;
+
+    border: 1px solid white;
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    opacity: 0.75;
+}
+
+
+/* Light mode */
+
+.light-mode .project-status {
+    border-color: black;
+    color: black;
+}
+/* =================================
+   PROFILE SECTION
+================================= */
+
+.profile-section {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 50px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.profile-image-container {
+    flex-shrink: 0;
+}
+
+.profile-photo {
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 2px solid white;
+
+    display: block;
+
+    animation:
+        profileFloat 4s ease-in-out infinite,
+        profileGlow 3s ease-in-out infinite;
+
+    transition: transform 0.4s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+.profile-content {
+    max-width: 550px;
+}
+
+.profile-tag {
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.profile-content h2 {
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+.profile-content h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.profile-content p {
+    line-height: 1.8;
+}
+
+.profile-button {
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 12px 22px;
+
+    border: 1px solid white;
+    border-radius: 6px;
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.profile-button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* Profile animation */
+
+@keyframes profileFloat {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+}
+
+@keyframes profileGlow {
+
+    0%, 100% {
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+
+    50% {
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.18);
+    }
+
+}
+
+
+/* Light mode */
+
+.light-mode .profile-section {
+    border-color: black;
+}
+
+.light-mode .profile-photo {
+    border-color: black;
+}
+
+.light-mode .profile-tag,
+.light-mode .profile-content h2,
+.light-mode .profile-content h3,
+.light-mode .profile-content p {
+    color: black !important;
+}
+
+.light-mode .profile-button {
+    color: black;
+    border-color: black;
+}
+
+.light-mode .profile-button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+
+        gap: 35px;
+
+        margin: 70px auto;
+        padding: 40px 20px;
+    }
+
+    .profile-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profile-content h2 {
+        font-size: 36px;
+    }
+
+    .profile-content h3 {
+        font-size: 18px;
+    }
+
+}
+/* Project image */
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+/* =================================
+   SCROLL-TRIGGERED ANIMATIONS
+================================= */
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.scroll-reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Different animation directions */
+
+.scroll-left {
+    opacity: 0;
+    transform: translateX(-60px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.scroll-right {
+    opacity: 0;
+    transform: translateX(60px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.scroll-left.show,
+.scroll-right.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* =================================
+   ANIMATED HAMBURGER MENU
+================================= */
+
+.menu-button {
+    position: relative;
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.menu-button span {
+    display: block;
+
+    width: 22px;
+    height: 2px;
+
+    background: white;
+    border-radius: 10px;
+
+    transition:
+        transform 0.4s ease,
+        opacity 0.3s ease,
+        width 0.4s ease;
+}
+
+
+/* Hover effect */
+
+.menu-button:hover {
+    transform: scale(1.08);
+
+    box-shadow:
+        0 0 15px rgba(255, 255, 255, 0.25);
+}
+
+
+/* When menu is open */
+
+.menu-button.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-button.active span:nth-child(2) {
+    opacity: 0;
+    width: 0;
+}
+
+.menu-button.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* Button glow when open */
+
+.menu-button.active {
+    box-shadow:
+        0 0 20px rgba(255, 255, 255, 0.3);
+
+    transform: rotate(180deg);
+}
+
+
+/* Light mode */
+
+.light-mode .menu-button {
+    border-color: black;
+}
+
+.light-mode .menu-button span {
+    background: black;
+}
+
+.light-mode .menu-button:hover {
+    box-shadow:
+        0 0 15px rgba(0, 0, 0, 0.2);
+}
+/* =================================
+   BEAUTIFUL NAVIGATION ANIMATION
+================================= */
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.4s ease;
+}
+
+
+/* Mobile navigation */
+
+@media (max-width: 700px) {
+
+    .nav-links {
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 0;
+
+        max-height: 0;
+        overflow: hidden;
+
+        opacity: 0;
+        transform: translateY(-15px);
+
+        transition:
+            max-height 0.5s ease,
+            opacity 0.4s ease,
+            transform 0.4s ease;
+    }
+
+
+    /* When menu opens */
+
+    .nav-links.show {
+        max-height: 400px;
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+        padding: 15px 0 20px;
+    }
+
+
+    /* Individual navigation links */
+
+    .nav-links a {
+        opacity: 0;
+
+        transform: translateY(-10px);
+
+        transition:
+            opacity 0.35s ease,
+            transform 0.35s ease;
+
+        padding: 10px 20px;
+
+        border-radius: 6px;
+    }
+
+
+    /* Links appear when menu opens */
+
+    .nav-links.show a {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+    /* Stagger the links */
+
+    .nav-links.show a:nth-child(1) {
+        transition-delay: 0.08s;
+    }
+
+    .nav-links.show a:nth-child(2) {
+        transition-delay: 0.16s;
+    }
+
+    .nav-links.show a:nth-child(3) {
+        transition-delay: 0.24s;
+    }
+
+    .nav-links.show a:nth-child(4) {
+        transition-delay: 0.32s;
+    }
+
+
+    /* Hover / touch effect */
+
+    .nav-links a:hover {
+        transform: scale(1.05);
+    }
+
+}
+/* =================================
+   PROJECT DETAILS PAGE
+================================= */
+
+.project-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.project-page-content {
+    text-align: center;
+}
+
+.project-label {
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.project-page h1 {
+    font-size: 50px;
+    margin: 15px 0;
+}
+
+.project-intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+
+/* Project image */
+
+.project-page-image {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 50px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+.project-page-image img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.project-page-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* Project information */
+
+.project-details {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.project-details h2 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.project-details p {
+    line-height: 1.8;
+}
+
+
+/* Technology tags */
+
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.technology-list span {
+    padding: 8px 15px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+
+/* Back button */
+
+.project-actions {
+    margin-top: 50px;
+}
+
+
+/* Light mode */
+
+.light-mode .project-page-image {
+    border-color: black;
+}
+
+.light-mode .technology-list span {
+    border-color: black;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .project-page {
+        padding: 50px 20px;
+    }
+
+    .project-page h1 {
+        font-size: 38px;
+    }
+
+    .project-intro {
+        font-size: 16px;
+    }
+
+    .project-details {
+        text-align: left;
+    }
+
+}

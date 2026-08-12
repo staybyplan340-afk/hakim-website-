@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Me - Hassan A Hakim</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* Contact page */
+
+        .contact-section {
+            max-width: 700px;
+            margin: 60px auto;
+            padding: 30px;
+        }
+
+        .contact-section h1 {
+            color: white !important;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .contact-section > p {
+            color: white !important;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .contact-section label {
+            display: block;
+            color: white !important;
+            margin-top: 18px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .contact-section input,
+        .contact-section textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #888;
+            font-size: 16px;
+        }
+
+        .contact-section textarea {
+            resize: vertical;
+        }
+
+        .contact-section button {
+            margin-top: 20px;
+            padding: 12px 22px;
+            border: none;
+            border-radius: 8px;
+            background: white;
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #formMessage {
+            color: white !important;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* Light mode */
+
+        .light-mode .contact-section h1,
+        .light-mode .contact-section > p,
+        .light-mode .contact-section label,
+        .light-mode #formMessage {
+            color: black !important;
+        }
+
+        .light-mode .contact-section button {
+            background: black;
+            color: white;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+
+            .contact-section {
+                margin: 30px 15px;
+                padding: 20px;
+            }
+
+            .contact-section h1 {
+                font-size: 30px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About Me</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+
+
+    <!-- Contact -->
+
+    <main>
+
+        <section class="contact-section">
+
+            <h1>Contact Me</h1>
+
+            <p>
+                If you'd like to get in touch with me,
+                send me a message below.
+            </p>
+
+
+            <form id="contactForm">
+
+
+                <label for="name">
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                >
+
+
+                <label for="email">
+                    Your Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+
+
+                <label for="message">
+                    Your Message
+                </label>
+
+                <textarea
+                    id="message"
+                    rows="6"
+                    placeholder="Write your message"
+                ></textarea>
+
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+
+            </form>
+
+
+            <p id="formMessage"></p>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h2>Hassan A Hakim</h2>
+
+        <p>
+            Learning, creating and building for the future.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Hassan A Hakim. All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+    <!-- Contact Form JavaScript -->
+
+    <script>
+
+        const contactForm = document.getElementById("contactForm");
+
+        const formMessage = document.getElementById("formMessage");
+
+
+        contactForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+
+            const name =
+                document.getElementById("name").value.trim();
+
+            const email =
+                document.getElementById("email").value.trim();
+
+            const message =
+                document.getElementById("message").value.trim();
+
+
+            if (name === "") {
+
+                formMessage.textContent =
+                    "Please enter your name.";
+
+                return;
+
+            }
+
+
+            if (email === "") {
+
+                formMessage.textContent =
+                    "Please enter your email.";
+
+                return;
+
+            }
+
+
+            if (message === "") {
+
+                formMessage.textContent =
+                    "Please enter a message.";
+
+                return;
+
+            }
+
+
+            formMessage.textContent =
+                "Your message is ready to send! ✅";
+
+        });
+
+    </script>
+
+
+    <!-- Main JavaScript -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
