@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="favicon.png">
 
     <meta charset="UTF-8">
 
@@ -12,187 +11,297 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <style>
-
-        /* Contact page */
-
-        .contact-section {
-            max-width: 700px;
-            margin: 60px auto;
-            padding: 30px;
-        }
-
-        .contact-section h1 {
-            color: white !important;
-            font-size: 36px;
-            margin-bottom: 15px;
-        }
-
-        .contact-section > p {
-            color: white !important;
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-
-        .contact-section label {
-            display: block;
-            color: white !important;
-            margin-top: 18px;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-
-        .contact-section input,
-        .contact-section textarea {
-            width: 100%;
-            box-sizing: border-box;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #888;
-            font-size: 16px;
-        }
-
-        .contact-section textarea {
-            resize: vertical;
-        }
-
-        .contact-section button {
-            margin-top: 20px;
-            padding: 12px 22px;
-            border: none;
-            border-radius: 8px;
-            background: white;
-            color: black;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        #formMessage {
-            color: white !important;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-        /* Light mode */
-
-        .light-mode .contact-section h1,
-        .light-mode .contact-section > p,
-        .light-mode .contact-section label,
-        .light-mode #formMessage {
-            color: black !important;
-        }
-
-        .light-mode .contact-section button {
-            background: black;
-            color: white;
-        }
-
-        /* Mobile */
-
-        @media (max-width: 600px) {
-
-            .contact-section {
-                margin: 30px 15px;
-                padding: 20px;
-            }
-
-            .contact-section h1 {
-                font-size: 30px;
-            }
-
-        }
-
-    </style>
-
 </head>
-
 
 <body>
 
+    <button id="themeButton" class="theme-button">
+        ☀️ Light Mode
+    </button>
 
-    <!-- Navigation -->
+    <nav class="main-nav">
 
-    <nav>
+        <button
+            id="menuButton"
+            class="menu-button"
+            aria-label="Open navigation menu">
 
-        <a href="index.html">Home</a>
+            <span></span>
+            <span></span>
+            <span></span>
 
-        <a href="about.html">About Me</a>
+        </button>
 
-        <a href="services.html">Services</a>
+        <div id="navLinks" class="nav-links">
 
-        <a href="contact.html">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
 
     </nav>
 
 
+    <main class="contact-page">
 
-    <!-- Contact -->
+        <section class="contact-hero">
 
-    <main>
-
-        <section class="contact-section">
-
-            <h1>Contact Me</h1>
-
-            <p>
-                If you'd like to get in touch with me,
-                send me a message below.
+            <p class="contact-tag">
+                LET'S CONNECT
             </p>
 
+            <h1>
+                Let's Build Something
+                <span>Great Together.</span>
+            </h1>
 
-            <form id="contactForm">
+            <p>
+                Have an idea, a project, or a question?
+                I'd love to hear from you. Tell me what
+                you're working on and let's explore how
+                we can turn your idea into a digital
+                experience.
+            </p>
 
-
-                <label for="name">
-                    Your Name
-                </label>
-
-                <input
-                    type="text"
-                    id="name"
-                    placeholder="Enter your name"
-                >
-
-
-                <label for="email">
-                    Your Email
-                </label>
-
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="Enter your email"
-                >
+        </section>
 
 
-                <label for="message">
-                    Your Message
-                </label>
+        <section class="contact-container">
 
-                <textarea
-                    id="message"
-                    rows="6"
-                    placeholder="Write your message"
-                ></textarea>
+            <div class="contact-info">
+
+                <p class="contact-tag">
+                    GET IN TOUCH
+                </p>
+
+                <h2>
+                    Have an idea?
+                </h2>
+
+                <p>
+                    Whether you need a personal website,
+                    portfolio, responsive design or help
+                    improving an existing project, you
+                    can reach out to me.
+                </p>
+
+                <div class="contact-points">
+
+                    <div class="contact-point">
+
+                        <span class="contact-icon">
+                            💻
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Web Projects
+                            </strong>
+
+                            <p>
+                                Websites, portfolios and
+                                digital projects.
+                            </p>
+
+                        </div>
+
+                    </div>
 
 
-                <button type="submit">
-                    Send Message
-                </button>
+                    <div class="contact-point">
+
+                        <span class="contact-icon">
+                            💬
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Project Discussion
+                            </strong>
+
+                            <p>
+                                Tell me what you have
+                                in mind.
+                            </p>
+
+                        </div>
+
+                    </div>
 
 
-            </form>
+                    <div class="contact-point">
+
+                        <span class="contact-icon">
+                            🤝
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Let's Work Together
+                            </strong>
+
+                            <p>
+                                Let's turn your idea
+                                into something real.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
 
-            <p id="formMessage"></p>
+            <div class="contact-form-box">
+
+                <p class="form-label">
+                    CLIENT REQUEST
+                </p>
+
+                <h2>
+                    Tell Me About Your Project
+                </h2>
+
+                <p class="form-intro">
+                    Fill in the details below and I'll
+                    know what you're looking for.
+                </p>
+
+
+                <form id="contactForm"
+      action="https://formspree.io/f/xnpavrzz"
+      method="POST">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Your Name
+                        </label>
+                        <input
+    type="text"
+    id="name"
+    name="name"
+    placeholder="Enter your name">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+                        <input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Enter your email">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone / WhatsApp
+                        </label>
+                        <input
+    type="tel"
+    id="phone"
+    name="phone"
+    placeholder="Enter your number">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="service">
+                            What do you need?
+                        </label>
+
+                        <select id="service" name="service">
+
+                            <option value="">
+                                Select a service
+                            </option>
+
+                            <option>
+                                Website Development
+                            </option>
+
+                            <option>
+                                Portfolio Website
+                            </option>
+
+                            <option>
+                                Web Design
+                            </option>
+
+                            <option>
+                                Responsive Design
+                            </option>
+
+                            <option>
+                                Website Improvement
+                            </option>
+
+                            <option>
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Tell Me About Your Project
+                        </label>
+                        <textarea
+    id="message"
+    name="message"
+    rows="6"
+    placeholder="Describe your project..."></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="contact-submit">
+
+                        Send Project Request →
+
+                    </button>
+                    <a
+    href="https://api.whatsapp.com/send?phone=233257036340"
+    target="_blank"
+    class="whatsapp-button">
+
+    💬 Discuss Your Project on WhatsApp
+
+</a>
+
+                    <p id="formMessage"></p>
+
+                </form>
+
+            </div>
 
         </section>
 
     </main>
 
-
-
-    <!-- Footer -->
 
     <footer>
 
@@ -205,11 +314,8 @@
         <div class="footer-links">
 
             <a href="index.html">Home</a>
-
             <a href="about.html">About</a>
-
             <a href="services.html">Services</a>
-
             <a href="contact.html">Contact</a>
 
         </div>
@@ -221,73 +327,7 @@
     </footer>
 
 
-
-    <!-- Contact Form JavaScript -->
-
-    <script>
-
-        const contactForm = document.getElementById("contactForm");
-
-        const formMessage = document.getElementById("formMessage");
-
-
-        contactForm.addEventListener("submit", function(event) {
-
-            event.preventDefault();
-
-
-            const name =
-                document.getElementById("name").value.trim();
-
-            const email =
-                document.getElementById("email").value.trim();
-
-            const message =
-                document.getElementById("message").value.trim();
-
-
-            if (name === "") {
-
-                formMessage.textContent =
-                    "Please enter your name.";
-
-                return;
-
-            }
-
-
-            if (email === "") {
-
-                formMessage.textContent =
-                    "Please enter your email.";
-
-                return;
-
-            }
-
-
-            if (message === "") {
-
-                formMessage.textContent =
-                    "Please enter a message.";
-
-                return;
-
-            }
-
-
-            formMessage.textContent =
-                "Your message is ready to send! ✅";
-
-        });
-
-    </script>
-
-
-    <!-- Main JavaScript -->
-
     <script src="script.js"></script>
-
 
 </body>
 
